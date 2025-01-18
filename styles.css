@@ -1,0 +1,105 @@
+html {
+    box-sizing: border-box;
+    background-color: #012a00;
+    background-image: url(images/medieval-city-of-magic-and-knights--add-subtle-acc.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 1200px) {
+    html {
+      background-size: cover; /* Изменяем масштабирование для больших экранов */
+      background-position: 0 1px;
+    }
+  }
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    height: 95vh;
+    margin: 10px;
+    position: relative;
+}
+
+
+button {
+    cursor: pointer;
+    color: #0a0a23;
+    background-color: #feac32;
+    background-image: linear-gradient(#fecc4c, #ffac33);
+    border: 3px solid #feac32;
+    max-height: 100%;
+}
+
+#game {
+    max-width: 500px;
+    max-height: 400px;
+    margin: 30px auto 0;
+    color: #ffffff;
+    padding: 10px;
+}
+
+#text {
+    background-color: #0a0a23;
+    color: #ffffff;
+    padding: 10px;
+}
+
+#monsterStats {
+    display: none;
+    border: 1px solid #0a0a23;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #c70d0d ;
+}
+
+#controls,#stats {
+    border: 1px solid #0a0a23;
+    color: #0a0a23;
+    background-color: #ffffffaa;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.stat {
+    padding-right: 10px;
+    
+}
+
+.volumeInput {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.headphonesMusic {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+#volume {
+    background-color: transparent;
+}
